@@ -57,10 +57,8 @@ const ShowDetail = () => {
   };
 
   if (!show) {
-      return <div>
-        <h2>Loading</h2>
-        <Loader/>
-      </div>;
+      return <Loader/>
+      
   }
 
   return (
