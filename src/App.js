@@ -1,17 +1,21 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import ShowSummary from './pages/ShowSummary';
-
+import './App.css'; 
+import routes from "./Routes/Router"
+import { RouterProvider } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const App = () => {
+  
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/shows/:showId" element={<ShowSummary/>} />
-      </Routes>
-    </BrowserRouter>
+ <div>
+   <RouterProvider router={routes}/>
+ </div>
   );
 };
 

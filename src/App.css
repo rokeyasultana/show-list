@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* button */
+
+button {
+  width: 200px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.button-box-special {
+  background: #383b3a;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Button Styles */
+
+.seven {
+  background: skyblue;
+  color: black;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 300ms;
+}
+
+.seven:hover {
+  transform: scale(1.1);
+  letter-spacing: 2px;
+  background: white;
+  color: darkblue;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.57);
+}
